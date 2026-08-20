@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Day 1 · The Brain and the Hands</title>
-<meta name="description" content="Day 1: build the brain of your AI employee in three steps, install twelve skills, publish one post.">
+<title>Step 3 · Your Business Brain · Build Your 1st AI Employee</title>
+<meta name="description" content="Paste your ICP and your Voice DNA in. Press copy. Claude gives you back one Business Brain document, which is the brain of your AI employee.">
 <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rethink+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 :root{
@@ -274,16 +274,14 @@ body.express .full-only{display:none}
     <div class="mark">
       <span class="dot"></span>
       <div>
-        <div class="mark-t">Day 1 · The Brain and the Hands</div>
-        <div class="mark-s">Purely Personal · AI Employee Challenge</div>
+        <div class="mark-t">Step 3 · Your Business Brain</div>
+        <div class="mark-s">Day 1 · Building the brain · 3 of 3</div>
       </div>
     </div>
     <nav class="navlinks">
-      <a href="#start">Start here</a>
-      <a href="#brain">The brain · 3 steps</a>
-      <a href="#skills">Install skills</a>
-      <a href="#post">First post</a>
-      <a href="#homework">Tonight</a>
+      <a href="#paste">Paste the two</a>
+      <a href="#out">Copy the prompt</a>
+      <a href="#install">Install the brain</a>
     </nav>
   </div>
   <div class="prog" id="prog"></div>
@@ -292,279 +290,165 @@ body.express .full-only{display:none}
 <div class="wrap">
 
   <div class="hero">
-    <div class="eyebrow">Day 1 of 3</div>
-    <h1>Today you build the brain, and give it <em>hands</em>.</h1>
-    <p class="lede">An AI employee is useless until it knows two things: who it is writing for, and how you sound. That is the brain, and you build it in three steps. Then come the hands: twelve specialists that each do one job, and all of them read the brain. You publish a post before the session ends.</p>
+    <div class="eyebrow">Building the brain · Document 3 of 3</div>
+    <h1>Two documents go in. One <em>brain</em> comes out.</h1>
+    <p class="lede">You now know who you are talking to, and how you talk. This last step welds them into a single document your AI employee reads before it writes a single word. <strong>Two minutes, and the brain is finished.</strong></p>
   </div>
 
-  <!-- START -->
-  <section id="start">
-    <div class="card">
-      <h3 style="margin-bottom:12px">Before you start</h3>
-      <ul class="clean check">
-        <li>Claude paid account, signed in. The free plan cannot install skills</li>
-        <li>Nothing else. Claude has a microphone built in and you will use it today</li>
-        <li>LinkedIn open in a tab</li>
-      </ul>
-      <div class="note n-warn" style="margin-bottom:0">
-        <b>Say your answers out loud today</b>
-        <p>Two of the three steps ask you to talk rather than type. People write in a stiffer voice than they speak in, and that stiffness ends up in every post your employee writes for the next month.</p>
+  <div class="card">
+    <h3 style="margin-bottom:14px">Where you are</h3>
+    <div class="grid3">
+      <div class="card card-tight" style="margin:0;background:var(--ok-bg);border-color:var(--ok-line)">
+        <div class="chips" style="margin-top:0"><span class="chip g">Done</span></div>
+        <h4 style="margin-top:8px">Step 1 · ICP</h4>
+        <p style="font-size:13.5px;margin-bottom:0">Who you are talking to</p>
+      </div>
+      <div class="card card-tight" style="margin:0;background:var(--ok-bg);border-color:var(--ok-line)">
+        <div class="chips" style="margin-top:0"><span class="chip g">Done</span></div>
+        <h4 style="margin-top:8px">Step 2 · Voice DNA</h4>
+        <p style="font-size:13.5px;margin-bottom:0">How you talk</p>
+      </div>
+      <div class="card card-tight" style="margin:0;border-color:var(--red)">
+        <div class="chips" style="margin-top:0"><span class="chip on">Now</span></div>
+        <h4 style="margin-top:8px">Step 3 · Business Brain</h4>
+        <p style="font-size:13.5px;margin-bottom:0">The two, joined up</p>
+      </div>
+    </div>
+    <div class="note n-info" style="margin-bottom:0;margin-top:18px">
+      <b>Why not just keep the two separate files?</b>
+      <p>Because Claude weighs everything you give it. Two documents that overlap, or quietly disagree, make it hesitate. One document with a clear order of priority makes it decisive. This step also adds the part neither file has on its own: the rules about what your employee must never do.</p>
+    </div>
+  </div>
+
+  <div class="note n-red">
+    <b>Paste the whole thing. All of it.</b>
+    <p style="margin-bottom:9px">There is no length limit on these boxes and there is no length limit on what Claude can read. A long document here is normal and correct.</p>
+    <p style="margin-bottom:0">The one mistake to avoid is shortening your documents to be safe. Every sentence you cut is a sentence your AI employee will not know about, and you will feel it in every post it writes afterwards. <strong>Select all, copy, paste. Do not trim.</strong></p>
+  </div>
+
+  <div class="modebar" style="top:60px">
+    <span class="mode-note">2 fields · about 2 minutes</span>
+    <span class="savechip" id="saveChip"><span class="sd"></span><span>Nothing pasted yet</span></span>
+  </div>
+
+  <!-- ═══════════ PASTE ═══════════ -->
+  <section id="paste" style="margin-top:28px">
+    <div class="rail">
+
+      <div class="step"><div class="step-n">1</div><div class="step-body">
+        <div class="step-t">Paste your ICP document</div>
+        <div class="f" style="margin:14px 0 0">
+          <p class="f-h">Open the <code class="inl">ICP.md</code> Claude gave you in Step 1. Select all, copy, paste it here. The whole document, not a summary. There is no length limit.</p>
+          <textarea data-k="icp" style="min-height:190px" placeholder="Paste the whole ICP document Claude wrote for you in Step 1..."></textarea>
+          <div class="f-c" data-count="icp" data-target="800">0 characters</div>
+        </div>
+      </div></div>
+
+      <div class="step"><div class="step-n">2</div><div class="step-body">
+        <div class="step-t">Paste your Voice DNA document</div>
+        <div class="f" style="margin:14px 0 0">
+          <p class="f-h">Same again with <code class="inl">VOICE-DNA.md</code> from Step 2. The whole thing, including the word bank and the red flags. Length is not a problem.</p>
+          <textarea data-k="voice" style="min-height:190px" placeholder="Paste the whole Voice DNA document Claude wrote for you in Step 2..."></textarea>
+          <div class="f-c" data-count="voice" data-target="800">0 characters</div>
+        </div>
+      </div></div>
+
+      <div class="step"><div class="step-n">3</div><div class="step-body">
+        <div class="step-t">Three details Claude cannot work out on its own</div>
+        <div class="step-d" style="margin-bottom:14px">Optional, but each one removes a mistake your employee would otherwise make every week.</div>
+        <div class="f">
+          <label class="f-l" for="fname">Your name and what people call you</label>
+          <input id="fname" data-k="name" placeholder="Daniel Paul. Most people call me Danny.">
+        </div>
+        <div class="f">
+          <label class="f-l" for="flang">The language you publish in</label>
+          <input id="flang" data-k="lang" placeholder="English. Sometimes Bahasa Indonesia for my local audience.">
+        </div>
+        <div class="f" style="margin-bottom:0">
+          <label class="f-l" for="fnever">Anything your employee must never claim</label>
+          <p class="f-h">Results you cannot prove, clients you cannot name, promises you will not make. This is the guard rail that stops it inventing things about you.</p>
+          <textarea id="fnever" data-k="never" placeholder="Never say I guarantee results. Never name a client. Never quote a number I have not given you."></textarea>
+        </div>
+      </div></div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ OUTPUT ═══════════ -->
+  <section id="out">
+    <div class="out">
+      <div class="out-h">
+        <div class="sec-k" style="margin-bottom:6px"> Ready for Claude</div>
+        <h3 style="margin-bottom:6px">Press copy, then paste into Claude</h3>
+        <p style="font-size:14px;margin:0">Same project, new chat. This is the last long prompt you will paste. After Day 3 you will not paste any of this again.</p>
+      </div>
+      <div class="out-b">
+        <div class="out-box" id="outBox">Paste your two documents above and this builds itself.</div>
+        <div class="btns">
+          <button class="btn btn-p" id="btnCopy">Copy the prompt</button>
+          <button class="btn btn-s" id="btnJson">Download answers</button>
+          <button class="btn btn-s" onclick="document.getElementById('impFile').click()">Load answers</button>
+          <button class="btn btn-s" onclick="window.print()">Save as PDF</button>
+          <input type="file" id="impFile" accept=".json" hidden>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- STEP 0 · PROJECT -->
-  <section id="project">
+  <!-- ═══════════ INSTALL ═══════════ -->
+  <section id="install">
     <div class="sec-head">
-      <div class="sec-k">Before anything else · 2 minutes</div>
-      <h2>First, the <em>head</em>.</h2>
-      <p class="sec-lede">Make one Claude Project. That project is the head, and everything you build across the three days lives inside it: what your employee knows, what it can do, and what it can reach.</p>
-    </div>
-    <div class="rail">
-      <div class="step"><div class="step-n">1</div><div class="step-body">
-        <div class="step-t">Claude sidebar → Projects → New project</div>
-        <div class="step-d">Name it exactly this, so it is easy to find on Day 3:
-          <div class="code"><div class="code-bar"><span class="code-l">Project name</span><button class="copy">Copy</button></div><pre>AI Marketing Employee</pre></div>
-          No description needed.
-        </div>
-      </div></div>
-      <div class="step"><div class="step-n">2</div><div class="step-body">
-        <div class="step-t">One head, not five</div>
-        <div class="step-d">Every chat you start today happens inside this project. A body only gets one head. People who make a new project for each exercise are the people whose setup stops working on Saturday.</div>
-      </div></div>
-    </div>
-  </section>
-
-  <div class="hr"></div>
-
-  <!-- THE BRAIN -->
-  <section id="brain">
-    <div class="sec-head">
-      <div class="sec-k">The main work of Day 1</div>
-      <h2>Three steps. Three documents. One <em>brain</em>.</h2>
-      <p class="sec-lede">Each one is its own page with the questions and a copy button. Do them in order, because Step 3 needs what Steps 1 and 2 produce.</p>
+      <div class="sec-k">The last part of Step 3</div>
+      <h2>Put the brain <em>inside</em> the project.</h2>
+      <p class="sec-lede">A document sitting in a chat does nothing. A document in Project Knowledge is read at the start of every conversation you ever have in that project.</p>
     </div>
 
     <div class="rail">
-
       <div class="step"><div class="step-n">1</div><div class="step-body">
-        <div class="step-t">Your ICP<span class="step-time">≈ 15 minutes</span></div>
-        <div class="step-d">
-          <p>Eight plain questions about the person you sell to. Answer them, press copy, paste into Claude. You get back a full customer profile.</p>
-          <p><strong>You finish with:</strong> <code class="inl">ICP.md</code> saved on your computer.</p>
-          <a class="btn btn-p" href="https://day-1-icp-exercise.vercel.app/" target="_blank" style="border-bottom:none">Open Step 1 · Your ICP</a>
-        </div>
+        <div class="step-t">Save it as <code class="inl">BUSINESS-BRAIN.md</code></div>
+        <div class="step-d">Ask Claude: <em>give me that as a downloadable .md file called BUSINESS-BRAIN.md</em>.</div>
       </div></div>
 
       <div class="step"><div class="step-n">2</div><div class="step-body">
-        <div class="step-t">Your Voice DNA<span class="step-time">≈ 25 minutes</span></div>
+        <div class="step-t">Add it to Project knowledge</div>
         <div class="step-d">
-          <p>Five questions you answer out loud, four or five minutes each. No editing, no tidying up. Press copy, paste into Claude.</p>
-          <p><strong>You finish with:</strong> <code class="inl">VOICE-DNA.md</code> saved on your computer.</p>
-          <a class="btn btn-p" href="https://day-1-voice-dna.vercel.app/" target="_blank" style="border-bottom:none">Open Step 2 · Your Voice DNA</a>
+          <p style="margin-bottom:0">Projects, your <code class="inl">AI Marketing Employee</code> project, then <strong>Project knowledge</strong>, then Add. Upload the file or paste the text.</p>
         </div>
       </div></div>
 
       <div class="step"><div class="step-n">3</div><div class="step-body">
-        <div class="step-t">Your Business Brain<span class="step-time">≈ 5 minutes</span></div>
+        <div class="step-t">One entry. Not three.</div>
         <div class="step-d">
-          <p>Paste the two documents in, press copy, paste into Claude. It welds them into one file and adds the rules about what your employee must never do.</p>
-          <p><strong>You finish with:</strong> <code class="inl">BUSINESS-BRAIN.md</code> sitting in your Project knowledge. That is the brain installed.</p>
-          <a class="btn btn-p" href="https://day-1-business-brain-exercise.vercel.app/" target="_blank" style="border-bottom:none">Open Step 3 · Your Business Brain</a>
+          <div class="note n-warn" style="margin-bottom:0">
+            <b>Do not also add the ICP and Voice DNA files</b>
+            <p>The Business Brain already contains both. Adding all three means Claude reads the same information three times, in three slightly different versions, and gets less decisive rather than more. Keep the other two files on your computer as backups. Project Knowledge gets one entry.</p>
+          </div>
         </div>
       </div></div>
 
-    </div>
-
-    <div class="note n-red">
-      <b>One entry in Project knowledge, not three</b>
-      <p>The Business Brain already contains your ICP and your voice. Adding all three files means Claude reads the same thing three times in three slightly different versions and gets less decisive, not more. Keep the other two on your computer as backups.</p>
-    </div>
-  </section>
-
-  <div class="hr"></div>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="sec-head">
-      <div class="sec-k">About 12 minutes</div>
-      <h2>Now give it <em>hands</em>.</h2>
-      <p class="sec-lede">A skill is a folder of instructions Claude loads when the job calls for it. Instead of one assistant that is average at everything, you get twelve pairs of hands that are each very good at one thing. All of them read the brain you just built, so all of them sound like you.</p>
-    </div>
-
-    <div class="note n-red">
-      <p style="margin-bottom:10px">Everything below is in this folder. Sign into Google first or it will not open.</p>
-      <a class="btn btn-d" href="https://drive.google.com/drive/folders/1YTjyWhJBYzlJpJ7ibc2tZwBto0HgEiL8?usp=drive_link" target="_blank" style="border-bottom:none">Open the skills folder</a>
-    </div>
-
-    <h3 style="margin-top:28px">How to install one</h3>
-    <p style="margin-bottom:14px">Forty seconds each. Do the first one slowly, then repeat.</p>
-    <div class="rail">
-      <div class="step"><div class="step-n">1</div><div class="step-body">
-        <div class="step-t">Download the <code class="inl">.skill</code> file from Drive</div>
-        <div class="step-d">Three dots → Download. Do not unzip it.</div>
-      </div></div>
-      <div class="step"><div class="step-n">2</div><div class="step-body">
-        <div class="step-t">In Claude: Customize → Skills</div>
-        <div class="step-d">Left sidebar, about the sixth item down.</div>
-      </div></div>
-      <div class="step"><div class="step-n">3</div><div class="step-body">
-        <div class="step-t">Click <span class="kbd">+</span> → <strong>Create skill</strong> → <strong>Upload skill</strong></div>
-        <div class="step-d">Uploading lives under "Create skill", which is not obvious. Drag the file in. Two seconds.</div>
-      </div></div>
       <div class="step"><div class="step-n">4</div><div class="step-body">
-        <div class="step-t">Repeat for all twelve</div>
-        <div class="step-d">Tick them off below. Order does not matter.</div>
+        <div class="step-t">Test that the brain is working</div>
+        <div class="step-d">
+          <p>Start a fresh chat inside the project and ask this. Notice you are not pasting anything.</p>
+          <div class="code"><div class="code-bar"><span class="code-l">Paste into a new chat in your project</span><button class="copy">Copy</button></div><pre>In two sentences, who am I talking to and how do I sound?</pre></div>
+          <p style="margin-bottom:0">If the answer describes your customer and your voice back to you, the brain is installed and working. If it says something generic, the file did not attach. Go back to step 2.</p>
+        </div>
       </div></div>
     </div>
 
-    <div class="note n-warn">
-      <b>If an upload will not go through</b>
-      <p style="margin-bottom:9px">Do not fight it. There is a second way in that works just as well.</p>
-      <p style="margin-bottom:0">Open a normal Claude chat, drag the <code class="inl">.skill</code> file straight into the message box, and say: <strong>"Unpack this and install it as a skill."</strong> Claude opens it and sets it up for you. Same result, thirty seconds.</p>
-    </div>
-
-    <div style="display:none">
-    </div>
-
-    <div class="tbl-wrap" style="margin-top:22px">
-      <table>
-        <thead><tr><th style="width:34px">✓</th><th>Skill</th><th>What it does</th></tr></thead>
-        <tbody>
-          <tr><td><input type="checkbox"></td><td><code class="inl">ai-marketing-employee</code></td><td>The coordinator. Sends a vague request to the right specialist below</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">voice-profile-builder</code></td><td>Sharpens your voice profile. The one you personalise tonight</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">linkedin-post-writer</code></td><td>Full LinkedIn posts, hook through call to action</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">first-post-coach</code></td><td>Walks you through publishing when you are hesitating</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">invisibility-diagnostic</code></td><td>Tells you why your content is not being seen</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">linkedin-carousel-builder</code></td><td>Slide-by-slide carousel copy</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">linkedin-cheatsheet-builder</code></td><td>Reference-guide graphics</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">competitor-x-ray</code></td><td>Pulls apart a competitor's content and finds the gaps</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">prospect-magnet</code></td><td>Turns your ICP into a search, then into outreach</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">multi-platform-amplifier</code></td><td>One post becomes a tweet, a reel script, a newsletter</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">weekly-content-engine</code></td><td>A full publishing week from one idea</td></tr>
-          <tr><td><input type="checkbox"></td><td><code class="inl">homework-reviewer</code></td><td>Marks your own homework before anyone else sees it</td></tr>
-        </tbody>
-      </table>
-    </div>
-
     <div class="note n-ok">
-      <b>Check the hands are attached to the brain</b>
-      <p style="margin-bottom:10px">One prompt tests both at once. Paste it into a chat inside your project.</p>
-      <div class="code" style="margin:0"><div class="code-bar"><span class="code-l">Ten second check</span><button class="copy">Copy</button></div><pre>Use my invisibility-diagnostic skill and tell me in one
-sentence who I am writing for.</pre></div>
-      <p style="font-size:14px;margin-top:11px;margin-bottom:0">It can only answer correctly if the skill loaded <em>and</em> your Business Brain is attached. A right answer means everything you built today is wired together. A generic answer means one of the two is missing.</p>
+      <b>Checkpoint · type BRAIN in the chat</b>
+      <p>One Business Brain document, sitting in Project Knowledge, and a fresh chat that already knows who you are. The brain of your AI employee is finished.</p>
     </div>
 
-    <h3 style="margin-top:32px">How you actually use one</h3>
-    <p style="margin-bottom:14px"><strong>There is no button.</strong> You mention the skill in a normal sentence and Claude loads it. That is the whole mechanism, and it is the part people miss.</p>
-    <div class="grid2">
-      <div class="card card-tight">
-        <h4>Name it directly</h4>
-        <div class="code" style="margin:10px 0 0"><div class="code-bar"><span class="code-l">Most reliable</span><button class="copy">Copy</button></div><pre>Use my linkedin-post-writer skill and write
-a post about [topic].</pre></div>
-      </div>
-      <div class="card card-tight">
-        <h4>Or describe the job</h4>
-        <div class="code" style="margin:10px 0 0"><div class="code-bar"><span class="code-l">Also works</span><button class="copy">Copy</button></div><pre>Write me a LinkedIn carousel about [topic],
-using whichever of my skills fits best.</pre></div>
-      </div>
-    </div>
-    <div class="note n-info">
-      <b>If nothing seems to happen</b>
-      <p>Claude did not pick it up. Say it more plainly: <em>Use the skill called linkedin-post-writer.</em> Names are exactly as written in the table, hyphens included.</p>
-    </div>
-  </section>
-
-  <div class="hr"></div>
-
-  <!-- FIRST POST -->
-  <section id="post">
-    <div class="sec-head">
-      <div class="sec-k">About 15 minutes</div>
-      <h2>Publish something <em>today</em>.</h2>
-      <p class="sec-lede">Not tomorrow once it is perfect. The point is not the post, it is proving to yourself that the brain you just built produces something you will put your name on.</p>
-    </div>
-
-    <div class="card">
-      <div class="code"><div class="code-bar"><span class="code-l">Paste into a chat inside your project</span><button class="copy">Copy</button></div><pre>Use my linkedin-post-writer skill.
-
-Write a post about one person who taught me something
-I still carry with me today.
-
-Here is the raw story, unpolished:
-[two or three sentences about the person and what they taught you]
-
-Use my Business Brain in project knowledge for my voice and
-my customer. 1300 to 1500 characters. End with a question
-that invites a reply, not a pitch.</pre></div>
-      <p style="margin-top:14px;margin-bottom:0">Read it out loud. If a sentence is one you would never say, tell Claude which one and why. Two rounds of that is usually enough.</p>
-    </div>
-
-    <div class="grid2" style="margin-top:16px">
-      <div class="card card-tight">
-        <h4>Publish it</h4>
-        <ul class="clean check" style="margin-bottom:0">
-          <li>You could read it aloud without wincing</li>
-          <li>A detail only you would know</li>
-          <li>Written to one person</li>
-        </ul>
-      </div>
-      <div class="card card-tight">
-        <h4>Send it back</h4>
-        <ul class="clean cross" style="margin-bottom:0">
-          <li>Could be about any business</li>
-          <li>Short punchy sentences stacked for drama</li>
-          <li>A tidy lesson at the end nobody asked for</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="card" style="margin-top:16px">
-      <h4>Never posted on LinkedIn before?</h4>
-      <p style="margin-bottom:0">Better starting point than it feels like: no bad habits to unlearn, no audience expecting a particular version of you. Same exercise, one change. Make the post about why you are starting now. That is honest, genuinely interesting, and it removes the pressure to sound like an authority on day one, which is what actually stops people pressing publish.</p>
-    </div>
-
-    <div class="note n-ok">
-      <b>Then post it and drop the link in chat</b>
-      <p>This is the show-and-tell that opens Day 2.</p>
-    </div>
-  </section>
-
-  <div class="hr"></div>
-
-  <!-- HOMEWORK -->
-  <section id="homework">
-    <div class="sec-head">
-      <div class="sec-k">Tonight</div>
-      <h2>One task. About 15 <em>minutes</em>.</h2>
-    </div>
-
-    <div class="card">
-      <h3 style="margin-bottom:10px">Make the Voice Profile Builder sound like you</h3>
-      <p>Your twelve skills arrived as strong templates. Tonight you personalise one, and the rest inherit your voice through the Business Brain.</p>
-      <div class="code"><div class="code-bar"><span class="code-l">Paste into a chat inside your project</span><button class="copy">Copy</button></div><pre>Use the voice-profile-builder skill.
-
-Read my Business Brain in project knowledge, then ask me
-whatever you still need to make this skill sound like me
-rather than like a template.
-
-Then rewrite the skill and give me the updated file to upload.</pre></div>
-      <p style="margin-top:14px;margin-bottom:0">If you have ten or twenty posts you wrote in the past, paste them in when it asks. That is the biggest quality jump available tonight.</p>
-    </div>
-
-    <div class="note n-info">
-      <b>Bring to Day 2</b>
-      <p>Your published post link, your Business Brain in Project knowledge, and <strong>one competitor's LinkedIn profile URL</strong>. That last one is used in the first exercise tomorrow.</p>
-    </div>
-
-    <div class="note n-red">
-      <b>If you are stuck on anything</b>
-      <p>Screenshot it, paste it into Claude, and say what you were trying to do. Or type <strong>#team</strong> in the chat and someone will take you into a breakout room. Neither costs you anything.</p>
+    <div class="card" style="margin-top:22px">
+      <h4>What happens to this brain over the next two days</h4>
+      <p style="margin-bottom:0">Tomorrow you connect tools to it, so it can go and read your market rather than guess at it. The day after, you turn this document into a token, which means the brain travels with you into every chat, every device, and every task that runs while you are asleep. Everything from here builds on the file you just made.</p>
     </div>
   </section>
 
   <div class="foot">
-    <span>Purely Personal · Day 1 · Build the Brain</span>
+    <span>Purely Personal · Step 3 of 3 · Your Business Brain</span>
     <span>Build Your 1st AI Employee</span>
   </div>
 
@@ -626,6 +510,121 @@ function initSaveChip(getState){
   }
   setInterval(paint,4000);paint();
 }
+</script>
+<script>
+const S={};
+document.querySelectorAll('[data-k]').forEach(el=>{
+  S[el.dataset.k]=el.value||'';
+  const h=()=>{S[el.dataset.k]=el.value;render();counts();if(window.markDirty)markDirty();};
+  el.addEventListener('input',h);
+});
+function counts(){
+  document.querySelectorAll('[data-count]').forEach(c=>{
+    const n=(S[c.dataset.count]||'').length,ok=n>=+c.dataset.target;
+    c.textContent=n.toLocaleString()+' characters'+(ok?' · looks like the full document':'');
+    c.classList.toggle('ok',ok);
+  });
+}
+function g(k,f){return (S[k]||'').trim()||(f||'[not pasted yet]');}
+function build(){
+return `You are building the permanent reference file for my AI marketing
+employee. Everything it writes from now on gets checked against this
+document first.
+
+I am giving you two documents I already made. Your job is not to summarise
+them. It is to combine them into ONE file that another AI can follow
+without ambiguity, resolving any place where the two disagree.
+
+════════════════════════════════════════
+DOCUMENT A, WHO I AM TALKING TO (my ICP)
+════════════════════════════════════════
+${g('icp')}
+
+════════════════════════════════════════
+DOCUMENT B, HOW I TALK (my Voice DNA)
+════════════════════════════════════════
+${g('voice')}
+
+════════════════════════════════════════
+THREE THINGS NOT IN EITHER DOCUMENT
+════════════════════════════════════════
+My name and what people call me: ${g('name','[not given]')}
+The language I publish in: ${g('lang','English')}
+Things you must never claim about me: ${g('never','[nothing specified, so never invent results, numbers, client names or testimonials]')}
+
+════════════════════════════════════════
+BUILD ME BUSINESS-BRAIN.md
+════════════════════════════════════════
+Use exactly these sections, in this order.
+
+1. WHO I AM
+   Three sentences. Name, what I sell, who I sell it to.
+
+2. THE ONE PERSON I WRITE FOR
+   The customer, condensed to about 120 words, written as one human
+   being. Include the phrases they actually use about their problem.
+
+3. WHAT THEY WANT AND WHAT STOPS THEM
+   A short table: what they want, what is in the way, what they have
+   already tried, what makes them finally decide, what makes them
+   say no.
+
+4. HOW I SOUND
+   My word bank, my sentence rhythm, my signature phrases. Pull these
+   straight from Document B. Do not improve them.
+
+5. MY WRITING RULES
+   The five rules from Document B, stated as instructions an AI can
+   follow rather than as advice.
+
+6. NEVER DO THIS
+   Every banned word and red flag from Document B, plus the things I
+   said you must never claim, plus these: no em dashes, no rhetorical
+   question as an opening line, no three-word sentences stacked for
+   drama, no tidy moral at the end.
+
+7. THE TEST
+   One sentence at the bottom, in my voice, that any piece of content
+   has to pass before it goes out.
+
+════════════════════════════════════════
+WHEN THE TWO DOCUMENTS DISAGREE
+════════════════════════════════════════
+Document B wins on anything about voice, tone or wording.
+Document A wins on anything about the customer.
+If something is genuinely unclear, ask me one question rather than
+guessing. One question, not a list.
+
+════════════════════════════════════════
+RULES
+════════════════════════════════════════
+- Readable in under five minutes. Shorter is better than complete.
+- Written as instructions to an AI, not as an essay about me.
+- Never invent a client, a number, a testimonial or a result.
+- No em dashes.
+
+Then output the whole thing as a single markdown file called
+BUSINESS-BRAIN.md that I can download.`;
+}
+function render(){document.getElementById('outBox').textContent=build();}
+document.getElementById('btnCopy').addEventListener('click',e=>copyText(build(),e.target,'Copied · paste into Claude'));
+document.getElementById('btnJson').addEventListener('click',()=>{
+  const b=new Blob([JSON.stringify(S,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(b);
+  a.download='my-business-brain-inputs.json';a.click();URL.revokeObjectURL(a.href);
+  toast('Downloaded');if(window.markSaved)markSaved();
+});
+document.getElementById('impFile').addEventListener('change',e=>{
+  const f=e.target.files[0];if(!f)return;const r=new FileReader();
+  r.onload=ev=>{try{Object.assign(S,JSON.parse(ev.target.result));
+    document.querySelectorAll('[data-k]').forEach(el=>{if(S[el.dataset.k]!==undefined)el.value=S[el.dataset.k];});
+    render();counts();toast('Loaded');}catch(err){toast('That file could not be read');}};
+  r.readAsText(f);
+});
+window.addEventListener('beforeunload',e=>{
+  if(Object.values(S).some(v=>v&&v.length>60)){e.preventDefault();e.returnValue='';}
+});
+render();counts();initSaveChip(()=>S);
 </script>
 </body>
 </html>
